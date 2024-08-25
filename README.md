@@ -26,13 +26,24 @@ A US bike-sharing provider BoomBikes has recently suffered considerable dips in 
 Significant variables to predict the demand for shared bikes
 
 - ### Top features for the model
-  - temp coef:0.57
-  - humidity coef:-0.1682
-  - windspeed coef:-0.194
-  - year coef:0.23
-  - light snow coef:-0.2411
-  - winter coef:0.13
+- temp coef:0.5684
+- humidity coef:-0.1643
+- windspeed coef:-0.1943
+- year coef:0.2296
+- light snow coef:-0.2425
+- winter coef:0.1251
 
 ## Final Model Equalation
 
-- ** count (cnt) = 0.1936+temp _ 0.5668 + humidity _ -0.1682 + windspeed _ -0.1936 + year_2019 _ 0.2299 + month*Jan * -0.0406 + month*Jul * -0.0423 + month*May * 0.0127+ month*Sep * 0.0916 + weekday*monday * 0.0631 + season*summer * 0.0723 + season*winter * 0.1251 + weathersit*light_snow_rain * -0.2411 + weathersit_misty-0.0536 **
+** count (cnt) = 0.1907 + workingday \* 0.0526+ temp \* 0.5684 - humidity \* 0.1643 - windspeed \* 0.1943 + year_2019 \* 0.2296 - month_Jan \* 0.0401 - month_Jul \* 0.0429 + month_Sep \* 0.0909 + weekday_monday \* 0.0629 + season_summer \* 0.0765 + season_winter \* 0.1251 - weathersit_light_snow_rain \* 0.2425 - weathersit_misty \* -0.0538 **
+
+## Verdict
+
+- Temparature Effect:
+  - Summer season or warmer months have more count of bike thus offers should give at that time
+- Weather Conditions
+  - Promotions and offers should be given when the weather is clear. There is a decline in adverse weather condition.
+- Windspeed & humidity effect
+  - In High windspeed or high humid seasons, there is a decline thus startegical chgange and infra level upgradation can be done this time
+- Year
+  - Year 2019 (post pandemic) is showing good result thus focus on year end busniess with offers and promotions.
